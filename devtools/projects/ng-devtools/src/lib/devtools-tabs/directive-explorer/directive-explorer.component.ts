@@ -209,5 +209,7 @@ export class DirectiveExplorerComponent implements OnInit, OnDestroy {
               {node: PropertyFlatNode; directivePosition: DirectivePosition}): void {
     const objectPath = constructPathOfKeysToPropertyValue(node.prop);
     this._appOperations.inspect(directivePosition, objectPath);
+
+    console.log('hello world');
   }
 }
